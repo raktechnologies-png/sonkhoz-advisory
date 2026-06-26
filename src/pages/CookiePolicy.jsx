@@ -134,7 +134,7 @@ export default function CookiePolicy() {
         <Ul items={[
           'Email: Info@sonkhozadvisory.co.za',
           'Phone: 074 339 0890',
-          'Address: Sandton, Johannesburg, Gauteng, South Africa',
+          'Address: Midrand, Johannesburg, Gauteng, South Africa',
         ]} />
       </S>
 

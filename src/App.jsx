@@ -634,7 +634,7 @@ export default function SonKhozAdvisory() {
                 {[
                   { Icon: IconPhone,    text: '074 339 0890'              },
                   { Icon: IconMail,     text: 'Info@sonkhozadvisory.co.za' },
-                  { Icon: IconLocation, text: 'Sandton, Johannesburg, SA' },
+                  { Icon: IconLocation, text: 'Midrand, Johannesburg, SA' },
                 ].map(({ Icon, text }) => (
                   <div key={text} className="flex items-center gap-4">
                     <div className="w-9 h-9 border border-gold/35 flex items-center justify-center text-gold flex-shrink-0">
@@ -833,7 +833,7 @@ export default function SonKhozAdvisory() {
                 {[
                   { Icon: IconPhone,    text: '074 339 0890'                                },
                   { Icon: IconMail,     text: 'Info@sonkhozadvisory.co.za'                  },
-                  { Icon: IconLocation, text: 'Sandton, Johannesburg\nGauteng, South Africa' },
+                  { Icon: IconLocation, text: 'Midrand, Johannesburg\nGauteng, South Africa' },
                 ].map(({ Icon, text }) => (
                   <li key={text} className="flex items-start gap-3">
                     <span className="text-gold mt-0.5 flex-shrink-0"><Icon /></span>
