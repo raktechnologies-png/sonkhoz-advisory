@@ -180,6 +180,8 @@ export default function SonKhozAdvisory() {
   const [menuOpen,  setMenuOpen]  = useState(false)
   const [form,      setForm]      = useState(FORM_INIT)
   const [submitted, setSubmitted] = useState(false)
+  const [sending,   setSending]   = useState(false)
+  const [sendError, setSendError] = useState('')
 
   // CountUp trigger — fires when stats row enters viewport
   const [statsVisible, setStatsVisible] = useState(false)
@@ -204,7 +206,25 @@ export default function SonKhozAdvisory() {
   }, [])
 
   const onChange = e => setForm(p => ({ ...p, [e.target.name]: e.target.value }))
-  const onSubmit = e => { e.preventDefault(); setSubmitted(true) }
+
+  const onSubmit = async e => {
+    e.preventDefault()
+    setSending(true)
+    setSendError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('Request failed')
+      setSubmitted(true)
+    } catch {
+      setSendError('Something went wrong. Please try again or email us directly.')
+    } finally {
+      setSending(false)
+    }
+  }
 
   return (
     <div className="font-sans text-charcoal antialiased">
@@ -729,10 +749,15 @@ export default function SonKhozAdvisory() {
                   {/* Submit */}
                   <button
                     type="submit"
-                    className="w-full bg-navy text-offwhite py-4 text-[11px] tracking-[0.28em] uppercase font-medium hover:bg-navy/85 transition-all duration-300 hover:shadow-lg active:scale-[0.99] flex items-center justify-center gap-2 btn-sweep"
+                    disabled={sending}
+                    className="w-full bg-navy text-offwhite py-4 text-[11px] tracking-[0.28em] uppercase font-medium hover:bg-navy/85 transition-all duration-300 hover:shadow-lg active:scale-[0.99] flex items-center justify-center gap-2 btn-sweep disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Submit Brief <IconArrow />
+                    {sending ? 'Sending...' : <>Submit Brief <IconArrow /></>}
                   </button>
+
+                  {sendError && (
+                    <p className="text-red-600/80 text-xs leading-relaxed">{sendError}</p>
+                  )}
 
                   <p className="text-charcoal/30 text-[11px] leading-relaxed">
                     By submitting this form you consent to SonKhoz Advisory processing your information
