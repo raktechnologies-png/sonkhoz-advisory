@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.DS_Store
+.claude/
+.vercel/
+
+# Environment & secrets — never commit these
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# Keys / certificates
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+ehthumbs.db

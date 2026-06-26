@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-charcoal;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* ── Cookie consent slide-up ────────────────────────────────────────────────── */
+@keyframes cookieSlideUp {
+  from { transform: translateY(110%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.cookie-slide-up {
+  animation: cookieSlideUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ── Button fluid sweep (diagonal shine on hover) ──────────────────────────── */
+.btn-sweep {
+  position: relative;
+  overflow: hidden;
+}
+.btn-sweep::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 65%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.16);
+  transform: skewX(-22deg) translateX(-250%);
+  transition: transform 1.15s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+.btn-sweep:hover::before {
+  transform: skewX(-22deg) translateX(320%);
+}
