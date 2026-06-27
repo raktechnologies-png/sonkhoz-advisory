@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import App          from './App.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import CookiePolicy  from './pages/CookiePolicy.jsx'
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/terms"          element={<Terms />} />
       </Routes>
       <CookieConsent />
+      <Analytics />
     </BrowserRouter>
   </React.StrictMode>
 )
