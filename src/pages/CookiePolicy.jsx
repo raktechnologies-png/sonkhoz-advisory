@@ -1,4 +1,5 @@
 import LegalLayout from '../components/LegalLayout'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 
 const S = ({ title, children }) => (
   <section className="mb-2">
@@ -46,6 +47,12 @@ const CookieTable = ({ rows }) => (
 )
 
 export default function CookiePolicy() {
+  useDocumentMeta({
+    title: 'Cookie Policy | SonKhoz Advisory',
+    description: 'Learn what cookies SonKhoz Advisory uses on this website and how to manage your preferences.',
+    canonical: 'https://sonkhozadvisory.co.za/cookie-policy',
+  })
+
   return (
     <LegalLayout title="Cookie Policy" lastUpdated="7 June 2026">
 

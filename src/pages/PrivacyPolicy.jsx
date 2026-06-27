@@ -1,4 +1,5 @@
 import LegalLayout from '../components/LegalLayout'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
 const S = ({ title, children }) => (
@@ -24,6 +25,12 @@ const Ul = ({ items }) => (
 )
 
 export default function PrivacyPolicy() {
+  useDocumentMeta({
+    title: 'Privacy Policy | SonKhoz Advisory',
+    description: 'How SonKhoz Advisory collects, uses, and protects your personal information in compliance with POPIA.',
+    canonical: 'https://sonkhozadvisory.co.za/privacy-policy',
+  })
+
   return (
     <LegalLayout title="Privacy Policy" lastUpdated="7 June 2026">
 

@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Security headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';" />
-    <meta name="description" content="SonKhoz Advisory — Financial intelligence and data-driven advisory services. Precision financial modelling, valuation, and investment-grade analysis." />
-    <title>SonKhoz Advisory</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://vercel-insights.com https://vercel-analytics.com; frame-ancestors 'none';" />
+
+    <!-- Primary SEO -->
+    <title>SonKhoz Advisory | Financial Intelligence That Moves Your Business Forward</title>
+    <meta name="description" content="Sonkhoz Advisory is a South African financial consulting firm helping startups, SMEs, and growing businesses with forecasting, profitability analysis, pricing optimisation, business valuation, and investment readiness." />
+    <meta name="keywords" content="financial advisory South Africa, business valuation, financial forecasting, pricing strategy, investment readiness, SME financial consulting, Midrand financial advisor, financial modelling" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="author" content="SonKhoz Advisory" />
+    <meta name="theme-color" content="#0E1E38" />
+    <link rel="canonical" href="https://sonkhozadvisory.co.za/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SonKhoz Advisory" />
+    <meta property="og:title" content="SonKhoz Advisory | Financial Intelligence That Moves Your Business Forward" />
+    <meta property="og:description" content="Financial consulting and advisory for startups, SMEs, and growing businesses across South Africa — forecasting, valuation, pricing, and investment readiness." />
+    <meta property="og:url" content="https://sonkhozadvisory.co.za/" />
+    <meta property="og:image" content="https://sonkhozadvisory.co.za/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_ZA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SonKhoz Advisory | Financial Intelligence That Moves Your Business Forward" />
+    <meta name="twitter:description" content="Financial consulting and advisory for startups, SMEs, and growing businesses across South Africa." />
+    <meta name="twitter:image" content="https://sonkhozadvisory.co.za/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SonKhoz Advisory",
+      "url": "https://sonkhozadvisory.co.za/",
+      "telephone": "+27743390890",
+      "email": "Info@sonkhozadvisory.co.za",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Midrand",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "description": "Sonkhoz Advisory is a South African financial consulting and advisory firm helping startups, SMEs, and growing businesses with financial forecasting, profitability analysis, scenario planning, pricing optimisation, business valuation, and investment readiness.",
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Financial Forecasting & Planning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Profitability & Performance Analysis" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scenario & Decision Analysis" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pricing & Business Model Optimisation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Valuation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investment Readiness" } }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

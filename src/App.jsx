@@ -5,6 +5,7 @@ import AnimatedSection from './components/AnimatedSection'
 import RevealText      from './components/RevealText'
 import GridItem        from './components/GridItem'
 import CountUp         from './components/CountUp'
+import useDocumentMeta from './hooks/useDocumentMeta'
 
 // ─── Inline SVG Icons ─────────────────────────────────────────────────────────
 
@@ -192,6 +193,12 @@ export default function SonKhozAdvisory() {
     if (h >= 12 && h < 17) return 'Good afternoon'
     return 'Good evening'
   })()
+
+  useDocumentMeta({
+    title: 'SonKhoz Advisory | Financial Intelligence That Moves Your Business Forward',
+    description: 'Sonkhoz Advisory is a South African financial consulting firm helping startups, SMEs, and growing businesses with forecasting, profitability analysis, pricing optimisation, business valuation, and investment readiness.',
+    canonical: 'https://sonkhozadvisory.co.za/',
+  })
   const statsRef = useRef(null)
 
   useEffect(() => {
@@ -304,6 +311,8 @@ export default function SonKhozAdvisory() {
         </div>
       </header>
 
+      <main>
+
       {/* ╔══════════════════════════════════════════╗
           ║  HERO                                    ║
           ╚══════════════════════════════════════════╝ */}
@@ -340,12 +349,12 @@ export default function SonKhozAdvisory() {
           </AnimatedSection>
 
           {/* Heading — per-line curtain reveal */}
-          <div className="font-serif text-offwhite text-4xl md:text-5xl lg:text-6xl xl:text-[68px] leading-[1.08] font-semibold">
+          <h1 className="font-serif text-offwhite text-4xl md:text-5xl lg:text-6xl xl:text-[68px] leading-[1.08] font-semibold">
             <RevealText delay={220}>Financial Intelligence That</RevealText>
             <RevealText delay={400}>
               <em className="italic text-gold">Moves Your Business Forward.</em>
             </RevealText>
-          </div>
+          </h1>
 
           {/* Subtitles */}
           <AnimatedSection variant="up" delay={580}>
@@ -770,6 +779,8 @@ export default function SonKhozAdvisory() {
           </div>
         </div>
       </section>
+
+      </main>
 
       {/* ╔══════════════════════════════════════════╗
           ║  FOOTER                                  ║

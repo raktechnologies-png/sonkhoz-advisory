@@ -1,4 +1,5 @@
 import LegalLayout from '../components/LegalLayout'
+import useDocumentMeta from '../hooks/useDocumentMeta'
 
 const S = ({ title, children }) => (
   <section className="mb-2">
@@ -29,6 +30,12 @@ const Callout = ({ children }) => (
 )
 
 export default function Terms() {
+  useDocumentMeta({
+    title: 'Terms & Conditions | SonKhoz Advisory',
+    description: 'The terms and conditions governing the use of the SonKhoz Advisory website and our financial advisory services.',
+    canonical: 'https://sonkhozadvisory.co.za/terms',
+  })
+
   return (
     <LegalLayout title="Terms & Conditions" lastUpdated="7 June 2026">
 

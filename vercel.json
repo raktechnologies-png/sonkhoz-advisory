@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.sonkhozadvisory.co.za" }],
+      "destination": "https://sonkhozadvisory.co.za/:path*",
+      "permanent": true
+    }
+  ]
+}
