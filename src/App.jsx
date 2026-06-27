@@ -855,6 +855,19 @@ export default function SonKhozAdvisory() {
               Clients are encouraged to seek independent legal and regulatory guidance where applicable.
             </p>
           </div>
+
+          {/* Developer credit */}
+          <p className="text-offwhite/15 text-[10px] text-center mt-6">
+            Proudly developed by{' '}
+            <a
+              href="https://www.raktechnologies.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold/60 hover:text-gold transition-colors duration-200"
+            >
+              RAK Technologies
+            </a>
+          </p>
         </div>
       </footer>
 
