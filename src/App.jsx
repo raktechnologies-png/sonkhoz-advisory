@@ -197,7 +197,7 @@ export default function SonKhozAdvisory() {
   useDocumentMeta({
     title: 'SonKhoz Advisory | Financial Intelligence That Moves Your Business Forward',
     description: 'Sonkhoz Advisory is a South African financial consulting firm helping startups, SMEs, and growing businesses with forecasting, profitability analysis, pricing optimisation, business valuation, and investment readiness.',
-    canonical: 'https://sonkhozadvisory.co.za/',
+    canonical: 'https://www.sonkhozadvisory.co.za/',
   })
   const statsRef = useRef(null)
 

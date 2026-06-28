@@ -33,7 +33,7 @@ export default function Terms() {
   useDocumentMeta({
     title: 'Terms & Conditions | SonKhoz Advisory',
     description: 'The terms and conditions governing the use of the SonKhoz Advisory website and our financial advisory services.',
-    canonical: 'https://sonkhozadvisory.co.za/terms',
+    canonical: 'https://www.sonkhozadvisory.co.za/terms',
   })
 
   return (

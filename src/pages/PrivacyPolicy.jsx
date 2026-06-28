@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
   useDocumentMeta({
     title: 'Privacy Policy | SonKhoz Advisory',
     description: 'How SonKhoz Advisory collects, uses, and protects your personal information in compliance with POPIA.',
-    canonical: 'https://sonkhozadvisory.co.za/privacy-policy',
+    canonical: 'https://www.sonkhozadvisory.co.za/privacy-policy',
   })
 
   return (

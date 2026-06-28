@@ -50,7 +50,7 @@ export default function CookiePolicy() {
   useDocumentMeta({
     title: 'Cookie Policy | SonKhoz Advisory',
     description: 'Learn what cookies SonKhoz Advisory uses on this website and how to manage your preferences.',
-    canonical: 'https://sonkhozadvisory.co.za/cookie-policy',
+    canonical: 'https://www.sonkhozadvisory.co.za/cookie-policy',
   })
 
   return (
