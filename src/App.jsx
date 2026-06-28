@@ -642,7 +642,7 @@ export default function SonKhozAdvisory() {
               <div className="space-y-5">
                 {[
                   { Icon: IconPhone,    text: '074 339 0890'              },
-                  { Icon: IconMail,     text: 'Info@sonkhozadvisory.co.za' },
+                  { Icon: IconMail,     text: 'mihlesonqwenqwe@gmail.com' },
                   { Icon: IconLocation, text: 'Midrand, Johannesburg, SA' },
                 ].map(({ Icon, text }) => (
                   <div key={text} className="flex items-center gap-4">
@@ -843,7 +843,7 @@ export default function SonKhozAdvisory() {
               <ul className="space-y-4">
                 {[
                   { Icon: IconPhone,    text: '074 339 0890'                                },
-                  { Icon: IconMail,     text: 'Info@sonkhozadvisory.co.za'                  },
+                  { Icon: IconMail,     text: 'mihlesonqwenqwe@gmail.com'                  },
                   { Icon: IconLocation, text: 'Midrand, Johannesburg\nGauteng, South Africa' },
                 ].map(({ Icon, text }) => (
                   <li key={text} className="flex items-start gap-3">
