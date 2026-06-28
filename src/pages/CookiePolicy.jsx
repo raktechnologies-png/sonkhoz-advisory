@@ -139,7 +139,7 @@ export default function CookiePolicy() {
       <S title="8. Contact Us">
         <P>If you have any questions about our use of cookies, please contact us:</P>
         <Ul items={[
-          'Email: Info@sonkhozadvisory.co.za',
+          'Email: mihlesonqwenqwe@gmail.com',
           'Phone: 074 339 0890',
           'Address: Midrand, Johannesburg, Gauteng, South Africa',
         ]} />

@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
       <S title="1. Who We Are">
         <P>SonKhoz Advisory (Pty) Ltd is the responsible party for personal information collected through this website and during our advisory engagements. You can reach us at:</P>
         <Ul items={[
-          'Email: Info@sonkhozadvisory.co.za',
+          'Email: mihlesonqwenqwe@gmail.com',
           'Phone: 074 339 0890',
           'Address: Midrand, Johannesburg, Gauteng, South Africa',
         ]} />
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
           'Withdrawal of consent — withdraw consent for marketing at any time',
           'Lodge a complaint — contact the Information Regulator if you believe your rights have been violated',
         ]} />
-        <P>To exercise any of these rights, please contact us at Info@sonkhozadvisory.co.za. We will respond within a reasonable time as required by POPIA.</P>
+        <P>To exercise any of these rights, please contact us at mihlesonqwenqwe@gmail.com. We will respond within a reasonable time as required by POPIA.</P>
       </S>
 
       <S title="10. The Information Regulator">
@@ -148,7 +148,7 @@ export default function PrivacyPolicy() {
       <S title="13. Contact Us">
         <P>For any questions about this Privacy Policy or how we handle your personal information, please get in touch:</P>
         <Ul items={[
-          'Email: Info@sonkhozadvisory.co.za',
+          'Email: mihlesonqwenqwe@gmail.com',
           'Phone: 074 339 0890',
           'Address: Midrand, Johannesburg, Gauteng, South Africa',
         ]} />

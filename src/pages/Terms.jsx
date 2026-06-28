@@ -159,7 +159,7 @@ export default function Terms() {
       <S title="13. Contact Us">
         <P>If you have any questions about these Terms and Conditions, please contact us:</P>
         <Ul items={[
-          'Email: Info@sonkhozadvisory.co.za',
+          'Email: mihlesonqwenqwe@gmail.com',
           'Phone: 074 339 0890',
           'Address: Midrand, Johannesburg, Gauteng, South Africa',
         ]} />
